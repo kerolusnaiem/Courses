@@ -1,0 +1,635 @@
+
+* {
+    padding : 0;
+    margin : 0;
+    color : #fff;
+    font-family : sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background : #001;
+    display : flex;
+    position : relative;
+    
+}
+
+.profile {
+    display : flex;
+    align-items : center;
+    gap : 10px;
+    margin-left : 0;
+}
+
+.profile h2 {
+    font-size : 18px;
+    text-transform :capitalize;
+}
+
+.image-box {
+    width : 70px;
+    height : 70px;
+    /* display : flex; */
+    align-items : center;
+    border-radius : 50%;
+    overflow : hidden;
+    flex-shrink : 0;
+
+}
+
+.image-box img {
+    width : 100%;
+    height : 100%;
+    transition : 0.3s;
+}
+
+.image-box img:hover {
+    scale : 1.2;
+}
+
+
+.image-box h2 {
+    font-size : 25px;
+}
+main {
+    position : relative;
+}
+.menue {
+    background : #123;
+    width : 65px;
+    height : 100vh;
+    padding : 5px;
+    position : relative;
+    position : sticky;
+    top : 0;
+    overflow : hidden;
+    transition : 0.5s;
+    
+}
+
+.menue:hover {
+    width : 180px;
+}
+ul {
+    list-style : none;
+    position : relative;
+    height : 100%;
+    
+}
+
+ul li a  {
+    display : block;
+    text-decoration : none;
+    padding : 10px;
+    margin : 20px 0;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    gap : 30px;
+    border-radius : 8px;
+    transition : 0.5s ;
+}
+
+ul li a:hover, .active {
+    background : #ffffff55;
+}
+
+
+
+.log-out {
+    position : absolute;
+    bottom : 0;
+    width : 100%;
+}
+
+.log-out a {
+    background : #a00;
+    
+}
+
+ul li a i {
+    font-size : 30px;
+    color : #1e8fffc0;
+}
+
+ul li a .hm {
+    padding-right : 25px;
+}
+
+ul li a .ab {
+    padding-right : 30px;
+}
+
+ul li a .co {
+    padding-right : 15px;
+}
+
+ul li a .us {
+    padding-right : 2px;
+}
+
+    /* Start content */
+
+ .btn {
+    background : red;
+    font-weight : bold;
+    text-decoration : none;
+    padding : 10px 15px;
+    border : 0;
+    outline : none;
+    border-radius : 10px;
+    cursor : pointer;
+    transition : 0.5s;
+ }  
+ 
+ .btn:hover {
+    background : rgb(106, 10, 10);
+    scale : 1.1;
+    
+ }
+.content {
+    width : 100%;
+    background : #94b4c168;
+    /* margin-top : 10px ; */
+    
+    
+}
+
+.title-info {
+    background : dodgerblue;
+    height : 100px;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    border-bottom-left-radius : 40px;
+    border-bottom-right-radius : 40px;
+    margin-bottom : 100px;
+
+
+}
+
+.title-info img {
+    width: 90px ;
+    height : 100px ;
+    margin-left : 240px;
+}
+
+.title-info img:hover {
+    scale : 1.2;
+}
+
+
+.title-info h1 {
+    font-size:  50px;
+    color : #fff;
+    margin-right : 50px;
+    margin-top : 40px;
+}
+
+.title-info span {
+    color : gold;
+    font-size : 50px;
+}
+
+.title-info i {
+    font-size : 30px;
+    margin-right : 200px;
+    transition : 0.5s;
+}
+
+.title-info i:hover {
+    scale : 1.3;
+}
+
+.prog {
+   font-size:  60px;
+
+   letter-spacing : 2px;
+}
+.image-head {
+    
+    width : 900px;
+    margin : 80px auto 150px;;
+    background:  #22635b;
+    padding : 70px 30px ;
+    display : flex;
+    justify-content : space-evenly;
+    align-items : center;
+    gap : 30px;
+    border-radius : 10px;
+    box-shadow : 2px 2px 20px 5px rgb(11, 168, 145);
+}
+
+.image-head img {
+    width : 400px;
+    border-radius: 10px;
+    box-shadow : 55px 45px 10px rgb(0,0,0,0.1);
+    transition : 0.5s;
+}
+
+.image-head img:hover {
+    scale : 1.1;
+}
+
+
+.head-info {
+    text-align : center;
+}
+
+
+.head-info h2 {
+    font-size : 35px;
+    color : gold;
+    margin-bottom : 10px;
+}
+
+.head-info p {
+    font-size : 18px;
+    letter-spacing : 2px;
+    margin-bottom : 20px;
+}
+.head-info .link {
+    transition : 0.5s;
+}
+.head-info .link:hover {
+    scale : 1.1;
+}
+ 
+ .head-info i {
+    margin-left : 5px;
+ }
+
+.data-info {
+    display : flex;
+    align-items:  center;
+    justify-content : space-between;
+    gap : 10px;
+    flex-wrap : wrap;
+}
+
+.data-info .box {
+    background : #123;
+    height : 150px;
+    flex-basis : 150px;
+    flex-grow:  1;
+    border-radius : 8px;
+    display : flex;
+    align-items : center;
+    justify-content:  space-around;
+    
+
+}
+
+.data-info .box:hover, td:hover {
+    background:  #ffffff55;
+}
+
+.data-info .box i {
+    font-size : 40px;
+}
+
+.data-info .box .data {
+    text-align : center;
+}
+.data-info .box .data span {
+    font-size:  30px;
+}
+     /* Start programming cousese  */
+
+.content .cards-code {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : center;
+    width : 1200px;
+    margin : auto;
+    margin-top : 150px;
+    gap : 40px;
+}
+
+.content .cards-code .card {
+     width : 300px;
+     background : #273F4F;
+     padding : 40px 10px 20px 10px;
+     text-align : center;
+     border-radius : 10px;
+     box-shadow : 2px 2px 20px rgb(255,255,255,0.3);
+}
+
+.content .cards-code .card img {
+     width : 150px;
+     height : 140px;
+     border-radius : 10px;
+     transition : 0.5s;
+}
+
+.content .cards-code .card img:hover {
+    scale : 1.1;
+    cursor : pointer;
+}
+
+
+.content .cards-code .card p {
+    font-size : 20px;
+    font-weight : 600;
+    margin : 20px 0 ;
+}
+
+     /* End programming cousese */
+ .gra {
+   font-size : 60px;
+   letter-spacing : 2px;
+   margin-top : 150px;
+ }
+ .image-head2 {
+    margin-top : 150px;
+    width : 900px;
+    margin : 80px auto 150px;;
+    background:  #22635b;
+    padding : 70px 30px ;
+    display : flex;
+    justify-content : space-evenly;
+    align-items : center;
+    border-radius : 10px;
+    box-shadow : 2px 2px 20px 5px rgb(11, 168, 145);
+ }    
+
+ .image-head2 img {
+    width : 400px;
+    border-radius: 10px;
+    box-shadow : 55px 45px 10px rgb(0,0,0,0.1);
+    transition : 0.5s;
+}
+
+ .image-head2 img:hover {
+    scale : 1.1;
+ }
+
+ .head-info h2 {
+    font-size : 35px;
+ }
+
+ .cards-code .photo {
+    border : 4px solid dodgerblue;
+ }
+
+  .cards-code .express {
+    border : 4px solid gold;
+  }
+
+  h1 {
+    text-align : center;
+    margin : 100px 0 50px 0;
+    font-size : 80px;
+    color :goldenrod;
+  }
+
+.about {
+    margin: 50px auto 150px auto;
+    text-align : center;
+    width : 800px;
+    background : linear-gradient(to bottom,rgb(148, 9, 9),transparent);
+    padding : 60px;
+    border-radius : 80%;
+    box-shadow : 2px 2px 30px rgb(0,0,0,0.2);
+    border-top : 4px solid red; 
+}
+
+.about h2 {
+   font-size : 30px;
+   
+}
+
+.about span {
+    color : gold;
+}
+
+.contact {
+
+      background-color :rgb(27, 44, 65);
+      padding-top : 10px;
+      padding-bottom : 60px;
+      text-align : center;
+      margin-top : 50px;
+          
+ }
+
+ .contact .container {
+      display : flex;
+      justify-content : space-around;
+      align-items : center;
+ }
+
+ .contact .container img {
+    width : 300px;
+    transition : 0.5s;
+ }
+
+ .contact .container img:hover {
+    scale : 1.1;
+ }
+
+ .contact h2 {
+      color: goldenrod;
+      font-size: 60px;
+      text-align: center;
+      margin: 0;
+      font-weight: 800;
+ }
+        
+ .contact  p {
+      text-align: center;
+      margin: -10px 0 0;
+      color: #fff;
+      font-size: 16px;
+ }
+
+ .contact .info {
+       padding-top : 80px;
+            
+  }
+        
+ .contact .info .label {
+     font-size : 25px;
+     font-weight : 600;
+     letter-spacing: 2px;
+     margin-bottom : 15px;
+  }
+        
+ .contact .info .link {
+      display : block;
+      font-size: 25px;
+      text-decoration: none;
+      color : #fff;
+      font-weight : 700;
+            
+        }
+        
+ .contact .info .social {
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    gap : 15px;
+    color : gold;
+    font-weight : 600;
+    margin-top : 20px;
+    font-size : 16px;
+ }
+        
+ .contact .info .social .icon {
+     width : 35px;
+     transition : 0.5s;
+  }
+
+ .contact .info .social .icon:hover{ 
+     scale : 0.8;
+  }
+
+        
+        /* End contact  */
+        
+        /* start footer  */
+ footer {
+
+  background : linear-gradient(to bottom , red , transparent);
+  color : #fff;
+  padding : 30px 10px;
+  text-align : center;
+  font-size : 18px;
+  
+            
+ }
+
+ footer p {
+
+     letter-spacing : 2px;
+  }
+        
+ footer span {
+
+  color : gold;
+  font-weight : bold;
+ }
+
+ footer .scroll-up {
+    color : #fff;
+    position : fixed;
+    bottom : 20px;
+    right : 20px;
+    margin-right : px;
+    background : green;
+    padding : 10px 15px;
+    border-radius : 10px;
+    box-shadow : 2px 2px 10px rgb(0 , 0 , 0, 0.2);
+}
+        /* End footer  */   
+    
+    /* End content   */
+
+
+    /* --- Responsive Design --- */
+
+/* للشاشات أقل من 992px (تابلت) */
+@media (max-width: 992px) {
+  .title-info h1 {
+    font-size: 35px;
+  }
+  .title-info img {
+    margin-left: 20px;
+    width: 70px;
+    height: 80px;
+  }
+  .image-head, .image-head2 {
+    flex-direction: column;
+    width: 100%;
+    margin: 40px auto;
+    padding: 30px 20px;
+  }
+  .image-head img, .image-head2 img {
+    width: 80%;
+    max-width: 350px;
+  }
+  .content .cards-code {
+    width: 100%;
+    gap: 20px;
+  }
+  .content .cards-code .card {
+    width: 45%;
+  }
+  .about {
+    width: 90%;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+}
+
+/* للشاشات أقل من 600px (موبايل) */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+  .menue {
+    position : fixed;
+    top : 0;
+    left : 0;
+    width: 100%;
+    height : auto;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    background : rgb(59,56,56);
+    overflow-x: auto;
+    z-index : 1000;
+  }
+  .menue:hover {
+    width: 100%;
+  }
+  .menue ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menue ul li {
+    margin: 0 5px;
+  }
+  .title-info {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+    /* gap: 15px; */
+  }
+
+  .title-info i {
+    margin : auto;
+    font-size : 18px;
+  }
+
+  .title-info h1 {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .title-info h1 span {
+    font-size : 25px;
+  }
+  .prog, .gra {
+    font-size: 40px;
+  }
+  .content .cards-code .card {
+    width: 90%;
+  }
+  .contact .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact .container img {
+    width: 200px;
+  }
+  .contact h2 {
+    font-size: 40px;
+  }
+}
